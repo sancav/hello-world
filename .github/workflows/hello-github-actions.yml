@@ -1,0 +1,11 @@
+name: GitHub Push Demo
+run-name: ${{ github.actor }} has pushed to Main
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Hello-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hola desde GitHub Actions"
